@@ -1,0 +1,28 @@
+{
+  "dataset_page": "https://www.gutenberg.org/ebooks/100",
+  "dataset_download_url": "https://www.gutenberg.org/files/100/100-0.txt",
+  "preprocessing": {
+    "lowercase": true,
+    "remove_punctuation": true,
+    "tokenization": "word-level"
+  },
+  "model": {
+    "embedding_dim": 128,
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "dropout": 0.3
+  },
+  "training": {
+    "epochs_requested": 15,
+    "batch_size": 128,
+    "sequence_length": 30,
+    "learning_rate": 0.001,
+    "patience": 3,
+    "train_sequences": 45000,
+    "validation_sequences": 5000,
+    "final_validation_loss": 6.430127340698242,
+    "final_validation_perplexity": 620.2529264247606
+  },
+  "device": "cpu",
+  "seed": 42
+}
